@@ -1,0 +1,20 @@
+type Book {
+    id: ID!
+    title: String!
+    author: Author!
+    synopsis: String!
+    releaseYear: String!
+    genre: String!
+    averageRating: Int!
+    copiesSold: Int!
+}
+
+input UpdateBook {
+    title: String
+    author: ID
+    synopsis: String
+    releaseYear: String
+    genre: String
+    averageRating: Int
+    copiesSold: Int
+}

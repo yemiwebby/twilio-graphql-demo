@@ -1,0 +1,8 @@
+type RootQuery {
+    author(id: ID!): Author
+    authors: [Author!]!
+    findBooksByAuthor(name: String!) : [Book!]!
+    books: [Book!]!
+    findBooksByGenre(genre: String!) : [Book!]!
+    book(id:ID!): Book
+}
